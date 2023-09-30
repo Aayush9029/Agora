@@ -8,18 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		45ED926C2AC786280035190D /* AgoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED926B2AC786280035190D /* AgoraApp.swift */; };
-		45ED926E2AC786280035190D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED926D2AC786280035190D /* ContentView.swift */; };
 		45ED92702AC786290035190D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45ED926F2AC786290035190D /* Assets.xcassets */; };
 		45ED92732AC786290035190D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45ED92722AC786290035190D /* Preview Assets.xcassets */; };
+		45ED927B2AC7873B0035190D /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED927A2AC7873B0035190D /* MenuBarView.swift */; };
+		45ED92802AC789D70035190D /* NSColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED927F2AC789D70035190D /* NSColor+Extensions.swift */; };
+		45ED92822AC78C720035190D /* MenuInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED92812AC78C720035190D /* MenuInfoModel.swift */; };
+		45ED92852AC7A0590035190D /* ExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED92842AC7A0590035190D /* ExamplesView.swift */; };
+		45ED92872AC7A07D0035190D /* MenuBarSchemeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED92862AC7A07D0035190D /* MenuBarSchemeRow.swift */; };
+		45ED928C2AC7A0D20035190D /* AppInfoBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED928B2AC7A0D20035190D /* AppInfoBar.swift */; };
+		45ED928E2AC7B2800035190D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ED928D2AC7B2800035190D /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45ED92682AC786280035190D /* Agora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ED926B2AC786280035190D /* AgoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraApp.swift; sourceTree = "<group>"; };
-		45ED926D2AC786280035190D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45ED926F2AC786290035190D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45ED92722AC786290035190D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45ED92742AC786290035190D /* Agora.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Agora.entitlements; sourceTree = "<group>"; };
+		45ED927A2AC7873B0035190D /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		45ED927F2AC789D70035190D /* NSColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extensions.swift"; sourceTree = "<group>"; };
+		45ED92812AC78C720035190D /* MenuInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInfoModel.swift; sourceTree = "<group>"; };
+		45ED92832AC78DE10035190D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45ED92842AC7A0590035190D /* ExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
+		45ED92862AC7A07D0035190D /* MenuBarSchemeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarSchemeRow.swift; sourceTree = "<group>"; };
+		45ED928B2AC7A0D20035190D /* AppInfoBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoBar.swift; sourceTree = "<group>"; };
+		45ED928D2AC7B2800035190D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +65,11 @@
 		45ED926A2AC786280035190D /* Agora */ = {
 			isa = PBXGroup;
 			children = (
+				45ED92832AC78DE10035190D /* Info.plist */,
 				45ED926B2AC786280035190D /* AgoraApp.swift */,
-				45ED926D2AC786280035190D /* ContentView.swift */,
+				45ED92882AC7A09A0035190D /* Views */,
+				45ED928A2AC7A0B00035190D /* Models */,
+				45ED92892AC7A0AA0035190D /* Extensions */,
 				45ED926F2AC786290035190D /* Assets.xcassets */,
 				45ED92742AC786290035190D /* Agora.entitlements */,
 				45ED92712AC786290035190D /* Preview Content */,
@@ -67,6 +83,34 @@
 				45ED92722AC786290035190D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45ED92882AC7A09A0035190D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45ED927A2AC7873B0035190D /* MenuBarView.swift */,
+				45ED928B2AC7A0D20035190D /* AppInfoBar.swift */,
+				45ED92862AC7A07D0035190D /* MenuBarSchemeRow.swift */,
+				45ED92842AC7A0590035190D /* ExamplesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45ED92892AC7A0AA0035190D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45ED927F2AC789D70035190D /* NSColor+Extensions.swift */,
+				45ED928D2AC7B2800035190D /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45ED928A2AC7A0B00035190D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45ED92812AC78C720035190D /* MenuInfoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45ED926E2AC786280035190D /* ContentView.swift in Sources */,
+				45ED92802AC789D70035190D /* NSColor+Extensions.swift in Sources */,
+				45ED927B2AC7873B0035190D /* MenuBarView.swift in Sources */,
+				45ED92872AC7A07D0035190D /* MenuBarSchemeRow.swift in Sources */,
+				45ED92852AC7A0590035190D /* ExamplesView.swift in Sources */,
+				45ED92822AC78C720035190D /* MenuInfoModel.swift in Sources */,
 				45ED926C2AC786280035190D /* AgoraApp.swift in Sources */,
+				45ED928E2AC7B2800035190D /* View+Extensions.swift in Sources */,
+				45ED928C2AC7A0D20035190D /* AppInfoBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +329,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Agora/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +357,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Agora/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
